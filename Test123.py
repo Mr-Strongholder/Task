@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,send_from_directory
 app=Flask(__name__,template_folder='template')
 @app.route("/",defaults={'filename':'file1.txt'})
 @app.route("/<filename>")
